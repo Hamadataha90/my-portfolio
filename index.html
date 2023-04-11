@@ -20,6 +20,11 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />    
+
   </head>
   <body style="overflow-x: hidden;">
    
@@ -153,12 +158,26 @@
       data-mdb-slide-to="4"
       aria-label="Slide 5"
     ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleCaptions"
+      data-mdb-slide-to="5"
+      aria-label="Slide 6"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleCaptions"
+      data-mdb-slide-to="6"
+      aria-label="Slide 7"
+    ></button>
+
   </div>
   <div class="carousel-inner">
     
 
 <div class="carousel-item active">
-      <img src="img/react-js.jpg" class="d-block w-100" alt="REACT"/ height="500px " style="filter: brightness(80%);">
+  
+      <img src="img/react-js.jpg" class="d-block w-100" alt="REACT"/ height="500px " style="filter: brightness(80%);" >
       <div class="carousel-caption d-none d-md-block">
         
       </div>
@@ -186,6 +205,18 @@
     </div>
     <div class="carousel-item">
       <img src="img/css.jpg" class="d-block w-100" alt="Css"/ height="500px" style="filter: brightness(80%); ">
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/php.jpg" class="d-block w-100" alt="Css"/ height="500px" style="filter: brightness(80%); ">
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/sql.jpg" class="d-block w-100" alt="Css"/ height="500px" style="filter: brightness(80%); ">
       <div class="carousel-caption d-none d-md-block">
         
       </div>
@@ -219,7 +250,7 @@
 </div>
 
 
-<section id="about" class="container-fluid" style="height: 1600px; background-color: whitesmoke;
+<section id="about" class="container-fluid " style="height: 1400px; background-color: whitesmoke;
  background-image: url(img/back.jpg); background-repeat: no-repeat; background-size: cover; " >
 
 <div class="row ">
@@ -240,19 +271,28 @@
 
 
 
- <div class="row">
-  <div class="col-lg-6 col-sm-12" style="margin-top: 40px;">
+ <div class="row ">
+  <div class="col-lg-6 col-sm-12 animate__animated animate__rollIn animate__delay-1s" style="margin-top: 40px;">
     <p ><h1 style="color: rgba(102, 14, 14, 0.821); ">Hi ~ iam > [ "Hamada Elsayed" ]</h1><br>
-      <h2 style="color: rgb(112, 94, 226);">..(Web Developer - Full Stack)..</h2>
-      <h2 style="color: rgb(235, 163, 39);"> {   HTML - CSS - Boot-Strap <br>J.S - 
-          react.js - PHP - SQL }</h2>
-
+      <h2 style="color: rgb(112, 94, 226);">..(Web Developer - Full Stack)..</h2><br><br>
+      <div class="row">
+      <h2 style="color: rgb(235, 163, 39);">
+         {   <i class="fa-brands fa-html5 fa-2xl" style="color: rgb(190, 56, 56)"></i> -
+         <i class="fa-brands fa-css3-alt fa-2xl" style="color: rgb(190, 56, 56)"></i>
+           - <i class="fa-brands fa-bootstrap fa-2xl" style="color: rgb(190, 56, 56)"></i> <br><br>
+           <i class="fa-brands fa-js fa-2xl" style="color: rgb(190, 56, 56)"></i>
+         -<i class="fa-brands fa-react fa-2xl" style="color: rgb(190, 56, 56)"></i>
+         -<i class="fa-brands fa-php fa-2xl" style="color: rgb(190, 56, 56)"></i>
+         -<i class="fa-solid fa-database fa-2xl" style="color: rgb(190, 56, 56)"></i>
+         
+            }</h2>
+        </div>
 
     </p>
       </div>
     
     
-      <div class=" col-lg-4 col-sm-12" style="margin-top: 40px;">
+      <div class=" col-lg-4 col-sm-12 animate__animated animate__fadeInDownBig animate__delay-1.5s" style="margin-top: 40px;">
     <div class="card" style="width: 22rem; border-radius: 50%;" >
       <img src="img/h.jpg" class="card-img-top" width="100px" height="350px " style="border-radius: 50%;">
       
@@ -265,14 +305,14 @@
 
  <div class=" w-75 container-fluid" style="margin-top: 20px;">
   <div class="row">
-  <div class="col-lg-4 col-sm-12">   
+  <div class="col-lg-4 col-sm-12 animate__animated animate__fadeInTopLeft animate__delay-2s">   
      <h1 style="color: red;">HTML & CSS</h1>
   </div>
   
-  <div class="range col-lg-8 col-sm-12" style=" height: 60px;">
+  <div class="range col-lg-8 col-sm-12 animate__animated animate__fadeInTopRight animate__delay-2s" style=" height: 60px;">
     <label for="customRange3" class="form-label" style="color: red;">0</label>
     <label for="customRange3" class="form-label float-end" style="color: red;">10</label>
-    <input type="range" class="form-range bg-dark" min="0" max="10" step="9" id="customRange3" />
+    <input type="range" class="form-range bg-dark " min="0" max="10" step="9" id="customRange3" />
   </div>
   
 </div>
@@ -282,25 +322,54 @@
 
  <div class=" w-75 container-fluid" style="margin-top: 20px;">
   <div class="row">
-  <div class="col-lg-4 col-sm-12">   
+  <div class="col-lg-4 col-sm-12 animate__animated animate__fadeInTopLeft animate__delay-2s">   
      <h1 style="color: red;">Boot-Strap</h1>
   </div>
   
-  <div class="range col-lg-8 col-sm-12" style=" height: 60px;">
+  <div class="range col-lg-8 col-sm-12 animate__animated animate__fadeInTopRight animate__delay-2s" style=" height: 60px;">
     <label for="customRange3" class="form-label" style="color: red;">0</label>
     <label for="customRange3" class="form-label float-end" style="color: red;">10</label>
-    <input type="range" class="form-range bg-dark" min="0" max="10" step="9" id="customRange3" />
+    <input type="range" class="form-range bg-dark animate__animated animate__fadeInTopRight animate__delay-1s" min="0" max="10" step="9" id="customRange3" />
+  </div>
+  
+</div>
+</div>
+
+ <div class=" w-75 container-fluid" style="margin-top: 20px;">
+  <div class="row">
+  <div class="col-lg-4 col-sm-4 animate__animated animate__fadeInTopLeft animate__delay-2s">   
+     <h1 style="color: red;">Javascript</h1>
+  </div>
+  
+  <div class="range col-lg-8 col-sm-12 animate__animated animate__fadeInTopRight animate__delay-2s" style=" height: 60px;">
+    <label for="customRange3" class="form-label" style="color: red;">0</label>
+    <label for="customRange3" class="form-label float-end" style="color: red;">10</label>
+    <input type="range" class="form-range bg-dark" min="0" max="10" step="7" id="customRange3" />
   </div>
   
 </div>
 </div>
  <div class=" w-75 container-fluid" style="margin-top: 20px;">
   <div class="row">
-  <div class="col-lg-4 col-sm-4">   
-     <h1 style="color: red;">Javascript</h1>
+  <div class="col-lg-4 col-sm-4 animate__animated animate__fadeInTopLeft animate__delay-2s">   
+     <h1 style="color: red;">PHP</h1>
   </div>
   
-  <div class="range col-lg-8 col-sm-12" style=" height: 60px;">
+  <div class="range col-lg-8 col-sm-12 animate__animated animate__fadeInTopRight animate__delay-2s" style=" height: 60px;">
+    <label for="customRange3" class="form-label" style="color: red;">0</label>
+    <label for="customRange3" class="form-label float-end" style="color: red;">10</label>
+    <input type="range" class="form-range bg-dark" min="0" max="10" step="7" id="customRange3" />
+  </div>
+  
+</div>
+</div>
+ <div class=" w-75 container-fluid" style="margin-top: 20px;">
+  <div class="row">
+  <div class="col-lg-4 col-sm-4 animate__animated animate__fadeInTopLeft animate__delay-2s">   
+     <h1 style="color: red;">MY_SQL</h1>
+  </div>
+  
+  <div class="range col-lg-8 col-sm-12 animate__animated animate__fadeInTopRight animate__delay-2s" style=" height: 60px;">
     <label for="customRange3" class="form-label" style="color: red;">0</label>
     <label for="customRange3" class="form-label float-end" style="color: red;">10</label>
     <input type="range" class="form-range bg-dark" min="0" max="10" step="7" id="customRange3" />
@@ -332,7 +401,7 @@
   </h1>
   </div>
 
-  <section id="projects" class="container-fluid" style="height: 2000px; 
+  <section id="projects" class="container-fluid" style="height: 1400px; 
   background-image: url(img/back5.jpg); background-repeat: no-repeat; background-size: cover; filter: brightness(95%);" >
 
 <div class="row ">
@@ -356,7 +425,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col h-50">
     <div class="card " style="margin-top: 50px;">
-      <a href="https://star-buy-black-horse.vercel.app/" target="_blank"><img src="img/name.jpg" class="card-img-top" style="height: 250px;" /></a>
+      <a href="https://star-buy-black-horse.vercel.app/" target="_blank"><img src="img/name.jpg" class="card-img-top" style="height: 200px;" /></a>
       <div class="card-body text-center">
         <a href="https://star-buy-black-horse.vercel.app/" target="_blank"><h5 class="card-title">star-buy</h5></a>
         <p class="card-text">
@@ -370,7 +439,7 @@
   </div>
   <div class="col h-50">
     <div class="card " style="margin-top: 50px;">
-      <a href="https://my-shopihi.vercel.app/" target="_blank"><img src="img/kudzoka.jpeg" class="card-img-top"  style="height: 250px;"/></a>
+      <a href="https://my-shopihi.vercel.app/" target="_blank"><img src="img/kudzoka.jpeg" class="card-img-top"  style="height: 200px;"/></a>
       <div class="card-body text-center">
        <a href="https://my-shopihi.vercel.app/" target="_blank"> <h5 class="card-title">shopihi</h5></a>
         <p class="card-text"></p>
@@ -382,7 +451,7 @@
   </div>
   <div class="col h-50">
     <div class="card" style="margin-top: 50px;">
-     <a href="https://star-buy-black-horse.vercel.app/" target="_blank"> <img src="img/name.jpg" class="card-img-top"  style="height: 250px;"/></a>
+     <a href="https://star-buy-black-horse.vercel.app/" target="_blank"> <img src="img/name.jpg" class="card-img-top"  style="height: 200px;"/></a>
       <div class="card-body text-center">
         <a href="https://star-buy-black-horse.vercel.app/" target="_blank"><h5 class="card-title">star-buy</h5></a>
         <p class="card-text">
@@ -412,7 +481,7 @@
     </h1>
     </div>
 
-<section class="Container" style="height: 500px;
+<section class="Container " style="height: 500px;
   background-image: url(img/back7.jpg);background-repeat: no-repeat;background-size: cover; ">
 
 
@@ -445,7 +514,7 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+  <button type="submit" class="btn btn-primary btn-block mb-4 ">Send</button>
 </form>
 </div>
 
@@ -461,7 +530,7 @@
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/hsist" target="_blank" role="button"
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://www.facebook.com/hsist" target="_blank" role="button"
         ><i class="fab fa-facebook-f"></i
       ></a>
 
@@ -486,7 +555,7 @@
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Hamadataha90" target="_blank" role="button"
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://github.com/Hamadataha90" target="_blank" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>
@@ -495,15 +564,15 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
     © 2023 Copyright:
-    <a class="text-white" href="https://my-portfolio-woad-three.vercel.app/">HAMADA ELSAYED</a>
+    <a class="text-white " href="https://my-portfolio-woad-three.vercel.app/">HAMADA ELSAYED</a>
   </div>
   <!-- Copyright -->
 </footer>
 
 
-<div class="row">
+<div class="row ">
 <div class=" col-lg-12 col-sm-6 text-center bg-dark w-100" >
  <a href="#home"><i class="fa-solid fa-chevron-up fa-beat fa-2xl" style="color: #2a12de;">
 </i> .. TO HOME.. <i class="fa-solid fa-chevron-up fa-beat fa-2xl" style="color: #2a12de;"></i> </a>
@@ -517,5 +586,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+   
   </body>
 </html>
